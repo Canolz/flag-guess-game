@@ -1,0 +1,56 @@
+{
+  "home": {
+    "settings": "Configuración",
+    "play": "Jugar",
+    "continue": "Continuar",
+    "new": "Nuevo juego",
+    "about": "Acerca de"
+  },
+  "settings": {
+    "title": "Configuración",
+    "difficulty": "Dificultad",
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil",
+    "back": "Volver",
+    "language": "Idioma",
+    "sound": "Sonido",
+    "continents": "Continentes",
+    "on": "Activado",
+    "off": "Desactivado",
+    "continents.placeholder":"Seleccione continentes"
+  },
+  "languages": {
+    "es": "Español"
+  },
+  "continents": {
+    "northamerica": "Norteamérica",
+    "southamerica": "Sudamérica",
+    "asia": "Asia",
+    "europe": "Europa",
+    "oceania": "Oceanía",
+    "africa": "África",
+    "antarctica": "Antártida"
+  },
+  "summary": {
+    "title": "¡Gracias por jugar!",
+    "points": "{{ points }} Puntos",
+    "successRate": "{{ rate }} Tasa de éxito",
+    "correctAnswers": "{{ answers }} Respuestas correctas",
+    "incorrectAnswers": "{{ answers }} Respuestas incorrectas",
+    "restart": "Reiniciar",
+    "share": "Compartir",
+    "share-text": "¿Conoces las banderas del mundo 🏴🌏? Acabo de jugar a Flags Guessing y obtuve {{ points }} puntos en {{ time }}⏰! Pon a prueba tus conocimientos y desafíate con este increíble quiz. Juega en FlagsMastery.com"
+  },
+  "common": {
+    "correct": "Correcto",
+    "incorrect": "Incorrecto",
+    "showMore": "Mostrar mas"
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": "Flags Guessing es un juego gratuito y de código abierto que busca mejorar tus conocimientos sobre los países y sus banderas. Siéntete libre de colaborar y sugerir nuevas características o cambios.",
+    "show-code": "¡Muéstrame el código!",
+    "back": "Volver"
+  }
+}

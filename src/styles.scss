@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap');
+
+body {
+//   background: url(assets/images/background.jpg);
+  background-repeat: repeat;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
+}
+
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p-multiselect {
+  min-width: 15rem;
+  width: 18rem;
+}
+
+[hidden] {
+  visibility: hidden;
+  display: block;
+}
+

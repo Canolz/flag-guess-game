@@ -1,0 +1,56 @@
+{
+  "home": {
+    "settings": "Settings",
+    "play": "Play",
+    "continue": "Continue",
+    "new": "New game",
+    "about": "About"
+  },
+  "settings": {
+    "title": "Settings",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "back": "Back",
+    "language": "Language",
+    "sound": "Sound",
+    "continents": "Continents",
+    "on": "On",
+    "off": "Off",
+    "continents.placeholder":"Select continents"
+  },
+  "languages": {
+    "en": "English"
+  },
+  "continents": {
+    "northamerica": "North America",
+    "southamerica": "South America",
+    "asia": "Asia",
+    "europe": "Europe",
+    "oceania": "Oceania",
+    "africa": "Africa",
+    "antarctica": "Antarctica"
+  },
+  "summary": {
+    "title": "Thanks for playing!",
+    "points": "{{ points }} Points",
+    "successRate": "{{ rate }} Success rate",
+    "correctAnswers": "{{ answers }} Correct Answers",
+    "incorrectAnswers": "{{ answers }} Incorrect Answers",
+    "restart": "Restart",
+    "share": "Share",
+    "share-text": "Do you know your flags of the world 🏴🌏? I just played Flags Guessing and scored {{ points }} points in {{ time }}⏰! Test your knowledge and challenge yourself with this amazing quiz. Play in FlagsMastery.com"
+  },
+  "common": {
+    "correct": "Correct",
+    "incorrect": "Incorrect",
+    "showMore": "Show more"
+  },
+  "about": {
+    "title": "About",
+    "description": "Flags Guessing is a free and open source game that tries to improve your knowledge about countries and their flags. Feel free to collaborate and suggest new features or changes.",
+    "show-code": "Show me the code!",
+    "back": "Back"
+  }
+}
