@@ -1,0 +1,36 @@
+<div class="m-3">
+  <div class="flex justify-content-center">
+    <card class="col-12 md:col-6">
+      <div class="flex flex-row flex-wrap justify-content-end mb-2 gap-2">
+        <save-icon [points]="gameStore.points()"></save-icon>
+        <points-chip [points]="gameStore.points()"></points-chip>
+        <time-chip [seconds]="gameStore.gameTime()"></time-chip>
+      </div>
+      <p-progressBar
+        [value]="gameStore.progressPercentage()"
+        [color]="gameStore.successRate() | colorGradient"
+        [showValue]="false"></p-progressBar>
+    </card>
+  </div>
+  <div class="flex justify-content-center mt-2">
+    <flag-img
+      [hidden]="!gameStore.isImgLoad()"
+      [@fadeImage]="gameStore.isImgLoad()"
+      (imgLoad)="gameStore.onImgLoad()"
+      [flag]="gameStore.selectedCountry().code"
+      class="h-13rem md:h-20rem">
+    </flag-img>
+  </div>
+  <div class="grid mt-2">
+    <div *ngFor="let country of gameStore.countryOptions()" class="p-1 col-12 md:col-6 lg:col-4">
+      <button
+        pButton
+        [disabled]="!gameStore.isImgLoad()"
+        [@transformOpt]="gameStore.isImgLoad()"
+        (click)="gameStore.checkSelection(country)"
+        [label]="country | countryName"
+        class="w-full"></button>
+    </div>
+  </div>
+  <div class="mt-2"></div>
+</div>

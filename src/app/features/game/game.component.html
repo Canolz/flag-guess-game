@@ -1,0 +1,21 @@
+<p-speedDial
+  class="absolute top-0 left-0 p-2"
+  showIcon="pi pi-bars"
+  hideIcon="pi pi-times"
+  [model]="items"
+  direction="right"
+  [transitionDelay]="80"></p-speedDial>
+<ng-container>
+  <ng-container *ngTemplateOutlet="!this.gameStore.isGameFinished() ? playGame : summary"> </ng-container>
+</ng-container>
+
+<ng-template #playGame>
+  <game-play-status></game-play-status>
+  <div class="mt-5 px-2">
+    <answer-history></answer-history>
+  </div>
+</ng-template>
+
+<ng-template #summary let-status="status">
+  <game-summary></game-summary>
+</ng-template>

@@ -1,0 +1,44 @@
+<div class="flex flex-wrap align-content-center min-h-screen justify-content-center p-2">
+  <card *transloco="let t; read: 'settings'">
+    <form [formGroup]="formGroup">
+      <div class="flex justify-content-center col-12">
+        <h2>{{ t('title') }}</h2>
+      </div>
+      <div class="flex flex-row flex-wrap justify-content-center">
+        <option-wrapper class="col-12 md:col-6" [label]="t('sound')">
+          <p-selectButton [options]="options.sound" formControlName="sound">
+            <ng-template let-sound pTemplate>
+              {{ t(sound) }}
+            </ng-template>
+          </p-selectButton>
+        </option-wrapper>
+        <option-wrapper class="col-12 md:col-6" [label]="t('language')">
+          <language-picker></language-picker>
+        </option-wrapper>
+        <option-wrapper class="col-12 md:col-6" [label]="t('difficulty')">
+          <p-selectButton [options]="options.difficulty" formControlName="difficulty">
+            <ng-template let-difficulty pTemplate>
+              {{ t(difficulty) }}
+            </ng-template>
+          </p-selectButton>
+        </option-wrapper>
+        <option-wrapper class="col-12 md:col-6" [label]="t('continents')">
+          <multiselect-picker
+            [parentForm]="formGroup"
+            [items]="options.continents"
+            [placeholder]="t('continents.placeholder')"
+            controlName="continents"
+            translationScope="continents"></multiselect-picker>
+        </option-wrapper>
+        <div class="flex flex-wrap justify-content-center col-12 mt-3">
+          <button
+            pButton
+            [label]="t('back')"
+            icon="pi pi-arrow-left"
+            class="p-button-outlined col-6"
+            (click)="clickBack()"></button>
+        </div>
+      </div>
+    </form>
+  </card>
+</div>
