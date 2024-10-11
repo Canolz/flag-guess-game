@@ -1,8 +1,7 @@
-import { bootstrapApplication } from '@angular/platform-browser';
-import { provideRouter, Routes, withHashLocation } from '@angular/router';
-import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
 
-export const routes: Routes = [
+const routes: Routes = [
   {
     path: 'game',
     pathMatch: 'full',
@@ -25,3 +24,9 @@ export const routes: Routes = [
   },
   { path: '**', redirectTo: '' },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, { useHash: true, bindToComponentInputs: true })],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
