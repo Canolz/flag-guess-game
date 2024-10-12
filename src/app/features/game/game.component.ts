@@ -7,9 +7,9 @@ import { CommonModule } from '@angular/common';
 import { TranslocoModule } from '@ngneat/transloco';
 import { AnswerHistoryComponent } from '@ui/answer-history/answer-history.component';
 import { SpeedDialModule } from 'primeng/speeddial';
-import { SummaryItemComponent } from './game-summary/ui/summary-item/summary-item';
 import { GameSummaryComponent } from './game-summary/game-summary.component';
 import { GamePlayStatusComponent } from './game-play-status/game-play-status.component';
+import { SummaryItemComponent } from './game-summary/ui/summary-item/summary-item.component';
 
 @Component({
   standalone: true,

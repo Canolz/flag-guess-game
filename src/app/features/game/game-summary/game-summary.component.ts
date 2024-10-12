@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { SecondsToTimePipe } from '@pipes/secods-to-time.pipe';
+
 import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { GameStore } from '@core/store/game.store';
 import { SHARE_URLS, SharePlatform } from './constants/game-summary.constants';
@@ -10,7 +10,8 @@ import { CorrectAnswerChipComponent } from '@ui/chips/correct-answer-chip/correc
 import { FlagImgComponent } from '@ui/flag-img/flag-img.component';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
-import { SummaryItemComponent } from './ui/summary-item/summary-item';
+import { SummaryItemComponent } from './ui/summary-item/summary-item.component';
+import { SecondsToTimePipe } from '@pipes/seconds-to-time.pipe';
 
 @Component({
   standalone: true,

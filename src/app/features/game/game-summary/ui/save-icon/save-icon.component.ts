@@ -8,18 +8,8 @@ import { saveIcon } from '@ui/animations/save-icon.animation';
   imports: [CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [saveIcon],
-  template: `
-    <div class="select-none text-primary px-1 py-2">
-      <i [@saveIcon]="points" class="pi pi-save "></i>
-    </div>
-  `,
-  styles: [
-    `
-      i {
-        opacity: 0;
-      }
-    `,
-  ],
+  templateUrl: './save-icon.component.html',
+  styleUrl: './save-icon.component.scss',
 })
 export class SaveIconComponent {
   @Input() points = 0;

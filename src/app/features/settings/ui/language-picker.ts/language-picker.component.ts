@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { AvailableLangs, TranslocoModule, TranslocoService } from '@ngneat/transloco';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,11 +13,11 @@ import { FormsModule } from '@angular/forms';
 export class LanguagePickerComponent implements OnInit {
   constructor(private _transloco: TranslocoService) {}
 
-  languages: string[] = [];
+  languages: AvailableLangs = [];
   selectedLang = '';
 
   ngOnInit(): void {
-    this.languages = this._transloco.getAvailableLangs() as string[];
+    this.languages = this._transloco.getAvailableLangs();
     this.selectedLang = this._transloco.getActiveLang();
   }
 

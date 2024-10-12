@@ -2,12 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'summary-item',
-  template: `
-    <li class="flex mb-3 align-items-center">
-      <i [class]="iconClasses"></i>
-      <span class="font-bold">{{ text }}</span>
-    </li>
-  `,
+  templateUrl: './summary-item.component.html',
   standalone: true,
 })
 export class SummaryItemComponent {

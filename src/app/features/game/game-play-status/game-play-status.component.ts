@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { GameStore } from '@core/store/game.store';
 import { TranslocoModule } from '@ngneat/transloco';
 import { ColorGradientPipe } from '@pipes/color-gradient.pipe';
-import { CountryNamePipe } from '@pipes/country.name.pipe';
+import { CountryNamePipe } from '@pipes/country-name.pipe';
 import { fadeImage } from '@ui/animations/fade-image.animation';
 import { saveIcon } from '@ui/animations/save-icon.animation';
 import { transformOpt } from '@ui/animations/transform-option.animation';
@@ -14,7 +14,8 @@ import { TimeChipComponent } from '@ui/chips/time-chip/time-chip.component';
 import { FlagImgComponent } from '@ui/flag-img/flag-img.component';
 import { ButtonModule } from 'primeng/button';
 import { ProgressBarModule } from 'primeng/progressbar';
-import { SaveIconComponent } from '../game-summary/ui/save-icon/save-icon';
+import { SaveIconComponent } from '../game-summary/ui/save-icon/save-icon.component';
+
 
 @Component({
   standalone: true,

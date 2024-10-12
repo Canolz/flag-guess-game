@@ -1,7 +1,7 @@
 import { CorrectAnswerChipComponent } from '@ui/chips/correct-answer-chip/correct-answer-chip.component';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { FlagImgComponent } from '@ui/flag-img/flag-img.component';
-import { CountryNamePipe } from '@pipes/country.name.pipe';
+import { CountryNamePipe } from '@pipes/country-name.pipe';
 import { CardComponent } from '@ui/card/card.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { GameStore } from '@core/store/game.store';
