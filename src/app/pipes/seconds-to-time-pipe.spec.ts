@@ -28,7 +28,7 @@ describe('SecondsToTimePipe', () => {
   });
 
   it('should return correct format for large values', () => {
-    expect(pipe.transform(3661)).toBe('61:01'); // 3661 seconds = 61 minutes and 1 second
-    expect(pipe.transform(7322)).toBe('122:02'); // 7322 seconds = 122 minutes and 2 seconds
+    expect(pipe.transform(3661)).toBe('61:01');
+    expect(pipe.transform(7322)).toBe('122:02');
   });
 });
